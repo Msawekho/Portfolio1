@@ -21,30 +21,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background: rgba(0, 0, 0, 0.7) url('images3.jpeg') center/cover;
+    background: rgba(0, 0, 0, 0.7) url('images/images3.jpeg') center/cover;
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-/* Intro Section */
-.intro {
-    text-align: left;
-    color: #fff;
-}
-
-.intro h1 {
-    font-size: 3rem;
-    color: #ffcc00;
-}
-
-.intro h2 {
-    font-size: 2.2rem;
-    margin: 10px 0;
-}
-
-.intro p {
-    font-size: 1.5rem;
 }
 
 /* Profile Picture */
@@ -86,68 +66,59 @@ nav ul li a:hover {
     color: #0a4b3d;
 }
 
-/* Contact Section */
-.contact-container {
+/* Social Icons */
+.social-icons {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
+    gap: 15px;
 }
 
-.contact-info {
-    flex: 1;
+.social-icons a {
+    font-size: 30px;
+    color: white;
+    transition: color 0.3s;
 }
 
-.contact-form {
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.contact-form h3 {
+.social-icons a:hover {
     color: #ffcc00;
 }
 
-.contact-form label {
-    color: #ffcc00;
+.youtube-icon:hover {
+    color: #ff0000;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+.twitter-icon:hover {
+    color: #00acee;
+}
+
+.facebook-icon:hover {
+    color: #3b5998;
+}
+
+.gmail-icon:hover {
+    color: #d44638;
+}
+.linkedin-icon:hover {
+    color: #3b5998;
+}
+
+/* Contact Form */
+.contact-form input, .contact-form textarea {
     border: 1px solid #ffcc00;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #0a4b3d;
+    padding: 10px;
+    width: 100%;
+    background-color: #f9f9f9;
 }
 
 .contact-form button {
     background-color: #ffcc00;
     color: #0a4b3d;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
     background-color: #0a4b3d;
     color: #ffcc00;
 }
-
-/* Responsive for contact form */
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-    }
-}
-
 
 /* Projects */
 .project {
@@ -182,11 +153,9 @@ footer {
         text-align: center;
     }
 
-    .intro h1 { font-size: 2.5rem; }
-    .intro h2 { font-size: 1.8rem; }
-    .intro p { font-size: 1.2rem; }
-
-    nav ul { flex-direction: column; }
+    nav ul {
+        flex-direction: column;
+    }
 
     .profile-pic {
         margin-top: 20px;
@@ -204,10 +173,6 @@ footer {
     header {
         padding: 15px;
     }
-
-    .intro h1 { font-size: 2rem; }
-    .intro h2 { font-size: 1.5rem; }
-    .intro p { font-size: 1rem; }
 
     .profile-pic {
         width: 100px;

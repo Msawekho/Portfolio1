@@ -3,10 +3,13 @@
 <head>
     <title>Your Name - Software Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <img src="images (4).jpeg" alt="Profile Picture" class="profile-pic"> <!-- Circular image -->
+        <img src="images/IMG-20240527-WA0087.jpggit add ." alt="Profile Picture" class="profile-pic"> <!-- Circular image -->
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -14,95 +17,61 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        
     </header>
+
     <h1>Hi Welcome</h1>
     <h3>My name is Hlanganani Hlongwane</h3>
     <p class="par">Software Developer</p>
+
     <section id="about">
-        
         <h2>About Me</h2>
-        <p>Hello! My name is Hlanganani Hlongwane, and I am a 
-            passionate and dedicated software developer with a strong 
-            background in building scalable and efficient applications. 
-            I thrive on solving complex problems through code and am 
-            always eager to learn and adapt to new technologies.
-
-            With a focus on both front-end and back-end development, I 
-            have worked with languages such as JavaScript,and 
-            Java, along with frameworks like React and Node.js. My goal 
-            is to write clean, maintainable code that enhances user 
-            experience and drives business outcomes.
-            
-            I am particularly interested in web development and cloud 
-            computing, and I enjoy collaborating with cross-functional 
-            teams to bring creative ideas to life. Whether it's designing
-            intuitive user interfaces or optimizing backend performance,
-            I am always looking for opportunities to push the 
-            boundaries of what technology can achieve.
-            
-            When I’m not coding, you can find me exploring the latest
-            tech trends, contributing to open-source projects, or 
-            experimenting with new development tools.</p>
-
+        <p>Hello! My name is Hlanganani Hlongwane, and I am a passionate and dedicated software developer with a strong background in building scalable and efficient applications...</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Online Church</h3>
-            <p>Description of the project, technologies used, and your 
-                role.</p>
-            <a href="https://github.com/Tsametsi/Church-Online-App" target="_blank">GitHub Repository</a>
+            <h3>Portfolio</h3>
+            <p>, technologies used, and your role.</p>
+            <a href="https://github.com/Msawekho/Portfolio1" target="_blank">GitHub Repository</a>
         </div>
-        <div class="project">
-            <h3>Transnet Website</h3>
-            <p>Description of the project, technologies used, and your 
-                role.</p>
-            <a href="https://github.com/Msawekho/New_Transnet_Website" target="_blank">GitHub Repository</a>
-        </div>
+
         <div class="project">
             <h3>Online Church</h3>
-            <p>Description of the project, technologies used, and your 
-                role.</p>
+            <p>Description of the project, technologies used, and your role.</p>
             <a href="https://github.com/Tsametsi/Church-Online-App" target="_blank">GitHub Repository</a>
         </div>
+
         <div class="project">
             <h3>Transnet Website</h3>
-            <p>Description of the project, technologies used, and your 
-                role.</p>
+            <p>Description of the project, technologies used, and your role.</p>
             <a href="https://github.com/Msawekho/New_Transnet_Website" target="_blank">GitHub Repository</a>
         </div>
-        <!-- Add more projects as needed -->
+
+        <div class="project">
+            <h3>Donation To Disaster</h3>
+            <p>Description of the project, technologies used, and your role.</p>
+            <a href="https://github.com/Msawekho/New_Transnet_Website" target="_blank">GitHub Repository</a>
+        </div>
     </section>
 
     <section id="contact">
         <div class="contact-container">
             <div class="contact-info">
-
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
                 <h2>Contact Me</h2>
-                <p>Email: <a href="mailto:hlangananimpungose@gmail.com">hlangananimpungose@gmail.com</a></p>
-
-                <p>LinkedIn : <a href="https://za.linkedin.com/in/hlanganani-hlongwane-51b500204" target="_blank"><i class="fab fa-linkedin"></i></a></p>
-     
-                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-               
-                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-     
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-
-                <a href="https://www.gmail.com" target="_blank"><i class="fab fa-gmail"></i></a>
-            </div>
-             <div class="socials">
-           
-                    
+                <!--<p>Email: <a href="mailto:hlangananimpungose@gmail.com">hlangananimpungose@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://za.linkedin.com/in/hlanganani-hlongwane-51b500204" target="_blank"><i class="fab fa-linkedin"></i></a></p>!-->
+                <div class="social-icons">
+                    <a href="mailto:hlangananimpungose@gmail.com" target="_blank"><i class="fab fa-google gmail-icon"></i></a>
+                    <a href="https://za.linkedin.com/in/hlanganani-hlongwane-51b500204" target="_blank"><i class="fab fa-google fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@gt2gether24" target="_blank"><i class="fab fa-youtube youtube-icon"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter twitter-icon"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook facebook-icon"></i></a> 
                 </div>
-    
+            </div>
             <div class="contact-form">
                 <h3>Share Your Views</h3>
-                <form action="#" method="POST">
+                <form id="contactForm" method="POST">
                     <label for="fname">First Name:</label><br>
                     <input type="text" id="fname" name="fname" required><br>
     
@@ -116,14 +85,14 @@
                     <textarea id="views" name="views" rows="4" required></textarea><br>
     
                     <button type="submit">Submit</button>
+                    <p id="successMessage" style="display:none;">Your message has been submitted successfully!</p>
                 </form>
             </div>
         </div>
     </section>
-    
+
     <footer>
         <p>&copy; 2024 Hlanganani. All Rights Reserved.</p>
     </footer>
 </body>
-
 </html>
