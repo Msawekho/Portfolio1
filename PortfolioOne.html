@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="images/IMG-20240527-WA0087.jpg" alt="Profile Picture" class="profile-pic"> <!-- Circular image -->
+            <img src="images/IMG-20240524-WA0093.jpg" alt="Profile Picture" class="profile-pic"> <!-- Circular image -->
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -19,39 +19,76 @@
         </nav>
     </header>
 
-    <h1>Hi Welcome</h1>
+    <h1>Hi Welcome To My Jorney</h1>
     <h3>My name is Hlanganani Hlongwane</h3>
     <p class="par">Software Developer</p>
 
-    <section id="about">
+    <div><section id="about">
         <h2>About Me</h2>
-        <p>Hello! My name is Hlanganani Hlongwane, and I am a passionate and dedicated software developer with a strong background in building scalable and efficient applications...</p>
-    </section>
+        <div class="aboutMe">
+        <p>Hello! My name is Hlanganani Hlongwane, and I am a passionate and dedicated software developer with a strong 
+            background in building scalable and efficient applications. I thrive on solving complex problems through code
+            and am always eager to learn and adapt to new technologies. With a focus on both front-end and back-end 
+            development, I have worked with languages such as JavaScript,and Java, along with frameworks like React 
+            and Node.js. My goal is to write clean, maintainable code that enhances user experience and drives business 
+            outcomes. I am particularly interested in both front-end and back-end development, and I enjoy collaborating 
+            with cross-functional teams to bring creative ideas to life. Whether it's designing intuitive user interfaces 
+            or optimizing backend performance, I am always looking for opportunities to push the boundaries of what technology 
+            can achieve. When I’m not coding, you can find me exploring the latest tech trends, contributing to open-source 
+            projects, or experimenting with new development tools.</p></div>
+    </section></div>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
             <h3>Portfolio</h3>
-            <p>, technologies used, and your role.</p>
-            <a href="https://github.com/Msawekho/Portfolio1" target="_blank">GitHub Repository</a>
+            <ul>
+            <p>A portfolio is a collection of work that showcases an individual's skills, achievements, and experience. 
+                It is often used in professional settings to demonstrate expertise and qualifications to potential 
+                employers, clients, or collaborators. Portfolios can be physical, such as a folder of printed documents, 
+                or digital, displayed on websites or platforms. They typically include examples of past projects, case 
+                studies, reports, or creative work, depending on the industry. In the context of careers like design, 
+                software development, or writing, a portfolio is essential for proving capabilities and past successes.
+                I use HTML, CSS and JavaScript to put together my current portfolio, and your role.</p>
+            <a href="https://github.com/Msawekho/Portfolio1" target="_blank">GitHub Repository</a></ul>
         </div>
 
         <div class="project">
             <h3>Online Church</h3>
-            <p>Description of the project, technologies used, and your role.</p>
-            <a href="https://github.com/Tsametsi/Church-Online-App" target="_blank">GitHub Repository</a>
+            <ul>
+            <p>A church app is a mobile or web-based application designed to enhance communication, engagement, and interaction 
+                within a church community. It provides church members, visitors, and leaders with easy access to information, 
+                resources, and services related to the church. Common features of a church app include:
+
+                <li>Sermons and Live Streaming**: Access to recorded sermons, live-streamed services, or events.</li>  
+                <li>Prayer Requests**: A section where users can submit and share prayer requests.</li>
+                <li>Event Management**: Information on upcoming events, church schedules, and registration for activities.</li>
+                <li>Donations and Tithing**: Secure options for online giving and contributions.</li>
+                <li>Bible and Devotional Tools**: Scripture readings, devotionals, and study guides for spiritual growth.</li>
+                <li>Announcements and Notifications**: Push notifications for important updates, including event reminders or 
+                urgent church news.</li>
+                <li>Group Communication**: Features for community groups to communicate, share updates, or schedule meetings.</li>
+
+                A church app is designed to foster better engagement and convenience for members, enhancing their connection to 
+                the church both during and outside of service times.
+                , technologies used, and your role.</p>
+            <a href="https://github.com/Tsametsi/Church-Online-App" target="_blank">GitHub Repository</a></ul>
         </div>
 
         <div class="project">
             <h3>Transnet Website</h3>
+            <ul>
             <p>Description of the project, technologies used, and your role.</p>
             <a href="https://github.com/Msawekho/New_Transnet_Website" target="_blank">GitHub Repository</a>
+            </ul>
         </div>
 
         <div class="project">
             <h3>Donation To Disaster</h3>
+            <ul>
             <p>Description of the project, technologies used, and your role.</p>
             <a href="https://github.com/Msawekho/New_Transnet_Website" target="_blank">GitHub Repository</a>
+            </ul>
         </div>
     </section>
 
@@ -61,13 +98,7 @@
                 <h2>Contact Me</h2>
                 <!--<p>Email: <a href="mailto:hlangananimpungose@gmail.com">hlangananimpungose@gmail.com</a></p>
                 <p>LinkedIn: <a href="https://za.linkedin.com/in/hlanganani-hlongwane-51b500204" target="_blank"><i class="fab fa-linkedin"></i></a></p>!-->
-                <div class="social-icons">
-                    <a href="mailto:hlangananimpungose@gmail.com" target="_blank"><i class="fab fa-google gmail-icon"></i></a>
-                    <a href="https://za.linkedin.com/in/hlanganani-hlongwane-51b500204" target="_blank"><i class="fab fa-google fa-linkedin"></i></a>
-                    <a href="https://www.youtube.com/@gt2gether24" target="_blank"><i class="fab fa-youtube youtube-icon"></i></a>
-                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter twitter-icon"></i></a>
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook facebook-icon"></i></a> 
-                </div>
+                
             </div>
             <div class="contact-form">
                 <h3>Share Your Views</h3>
@@ -82,17 +113,26 @@
                     <input type="email" id="email" name="email" required><br>
     
                     <label for="views">Your Views:</label><br>
-                    <textarea id="views" name="views" rows="4" required></textarea><br>
+                    <textarea id="views" name="views" rows="4" required></textarea><br><br>
     
                     <button type="submit">Submit</button>
                     <p id="successMessage" style="display:none;">Your message has been submitted successfully!</p>
                 </form>
             </div>
+            <br>
+            <div class="social-icons">
+                <a href="mailto:hlangananimpungose@gmail.com" target="_blank"><i class="fab fa-google gmail-icon"></i></a>
+                <a href="https://za.linkedin.com/in/hlanganani-hlongwane-51b500204" target="_blank"><i class="fab fa-google fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@gt2gether24" target="_blank"><i class="fab fa-youtube youtube-icon"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter twitter-icon"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook facebook-icon"></i></a> 
+            </div>
         </div>
+        <br>
     </section>
 
     <footer>
-        <p>&copy; 2024 Hlanganani. All Rights Reserved.</p>
+        <p>&copy; 2024 Hlanganani Hlongwane. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 /* General styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Calibri', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #0a4b3d;
@@ -10,11 +10,20 @@ body {
 
 h1, .par {
     text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+h2, .par {
+    text-align: center;
 }
 h3, .par {
     text-align: center;
+    font-family:'Arial', sans-serif
 }
 
+/*ABOUT ME */
+.aboutMe{
+    padding: 0% 15px;
+}
 /* Header */
 header {
     display: flex;
@@ -32,7 +41,7 @@ header {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #ffcc00;
+    border: 3px solid #ffbb00c7;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
     animation: float 3s ease-in-out infinite;
     position: relative;
@@ -69,7 +78,10 @@ nav ul li a:hover {
 /* Social Icons */
 .social-icons {
     display: flex;
+    justify-content: center; /* Horizontally centers the icons */
+    align-items: center; /* Vertically centers the icons */
     gap: 15px;
+    margin-top: 20px; /* Optional: adds some space above the icons */
 }
 
 .social-icons a {
@@ -79,9 +91,10 @@ nav ul li a:hover {
 }
 
 .social-icons a:hover {
-    color: #ffcc00;
+    color: #3b5998;
 }
 
+/* Individual Icon Hover Effects */
 .youtube-icon:hover {
     color: #ff0000;
 }
@@ -97,22 +110,48 @@ nav ul li a:hover {
 .gmail-icon:hover {
     color: #d44638;
 }
+
 .linkedin-icon:hover {
     color: #3b5998;
 }
 
+
 /* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the entire form content */
+    width: 100%; /* Ensures the form takes up the available width */
+    max-width: 600px; /* Restricts form width to a reasonable size */
+    margin: 0 auto; /* Centers the form horizontally on the page */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Adds a subtle background */
+    border-radius: 8px;
+}
+
+/* Input and Textarea Styling */
 .contact-form input, .contact-form textarea {
     border: 1px solid #ffcc00;
     padding: 10px;
-    width: 100%;
+    width: 100%; /* Makes input fields responsive */
     background-color: #f9f9f9;
+    margin-bottom: 15px; /* Adds space between input fields */
+    border-radius: 5px;
+    font-size: 16px;
 }
 
+/* Button Styling */
 .contact-form button {
     background-color: #ffcc00;
     color: #0a4b3d;
     cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 50%; /* Makes the button 50% of the form width */
+    text-align: center; /* Ensures the text inside the button is centered */
 }
 
 .contact-form button:hover {
