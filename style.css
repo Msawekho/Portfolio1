@@ -10,10 +10,11 @@ body {
 
 h1, .par {
     text-align: center;
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 h2, .par {
     text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 h3, .par {
     text-align: center;
@@ -114,6 +115,10 @@ nav ul li a:hover {
 .linkedin-icon:hover {
     color: #3b5998;
 }
+.github-icon:hover {
+    color: #000000;
+}
+
 
 
 /* Contact Form */
@@ -169,7 +174,7 @@ nav ul li a:hover {
 }
 
 .project:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .project h3 {
