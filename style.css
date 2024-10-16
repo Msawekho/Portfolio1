@@ -8,23 +8,6 @@ body {
     scroll-behavior: smooth;
 }
 
-h1, .par {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-}
-h2, .par {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-}
-h3, .par {
-    text-align: center;
-    font-family:'Arial', sans-serif
-}
-
-/*ABOUT ME */
-.aboutMe{
-    padding: 0% 15px;
-}
 /* Header */
 header {
     display: flex;
@@ -36,6 +19,82 @@ header {
     top: 0;
     z-index: 1000;
 }
+/* Intro Section */
+#intro {
+    background-color: #0a4b3d;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro-container h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.intro-container h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.intro-text:hover {
+    transform: scale(0.98);
+}
+
+
+/* About Section */
+#about h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+    
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+.about-section h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+.about-section:hover {
+    transform: scale(0.98);
+}
+
+h2, .par {
+    font-size: 2rem;
+   text-align: center;
+   font-family:'Arial', sans-serif
+}
+
+h3, .par {
+    font-size: 2rem;
+   text-align: center;
+   font-family:'Arial', sans-serif
+}
+
 
 /* Profile Picture */
 .profile-pic {
@@ -59,6 +118,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    font-size: 2rem;
 }
 
 nav ul li a {
@@ -166,6 +226,7 @@ nav ul li a:hover {
 
 /* Projects */
 .project {
+    font-size: 1.2rem;
     background-color: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 8px;
@@ -174,7 +235,7 @@ nav ul li a:hover {
 }
 
 .project:hover {
-    transform: scale(1.03);
+    transform: scale(0.98);
 }
 
 .project h3 {
