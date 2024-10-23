@@ -14,9 +14,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5px 0.5px;
+    padding: 0.1px 0.1px;
     background: rgba(0, 0, 0, 0.7) url('images/images3.jpeg') center/cover;
-  
+    position:sticky;
     top: 0;
     z-index: 1000;
 }
