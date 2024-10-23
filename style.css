@@ -3,6 +3,7 @@ body {
     font-family: 'Calibri', sans-serif;
     margin: 0;
     padding: 0;
+    /* background: rgba(0, 0, 0, 0.7) url('images/about.jpg') center/cover; */
     background-color: #0a4b3d;
     color: white;
     scroll-behavior: smooth;
@@ -22,7 +23,8 @@ header {
 
 /* Intro Section */
 #intro {
-    background-color: #0a4b3d;
+    background: rgba(0, 0, 0, 0.7) url('images/green.jpeg') center/cover;
+    /* background-color: #0a4b3d; */
     padding: 50px 20px;
     text-align: center;
 }
@@ -73,7 +75,8 @@ header {
 
 .about-section p {
     font-size: 1.2rem;
-    background-color: rgba(255, 255, 255, 0.2);
+    /* background: rgba(0, 0, 0, 0.7) url('images/about-green-icon.png ') center/cover; */
+    background-color: rgba(255, 255, 255, 0.2);  
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -191,7 +194,8 @@ nav ul li a:hover {
     max-width: 600px; /* Restricts form width to a reasonable size */
     margin: 0 auto; /* Centers the form horizontally on the page */
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Adds a subtle background */
+    background: rgba(0, 0, 0, 0.7) url('images/contact.png') center/cover;
+    /* background-color: rgba(255, 255, 255, 0.1); Adds a subtle background */
     border-radius: 8px;
 }
 
@@ -228,6 +232,7 @@ nav ul li a:hover {
 /* Projects */
 .project {
     font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.7) url('images/greener.jpg') center/cover;
     background-color: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 8px;
