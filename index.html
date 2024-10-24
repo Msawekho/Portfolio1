@@ -6,6 +6,7 @@
     <script defer src="script.js"></script>
     <!-- Include Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -182,5 +183,28 @@
     <footer>
         <p>&copy; 2024 Hlanganani Hlongwane. All Rights Reserved.</p>
     </footer>
+
+
+<!-- Chatbot Section -->
+<div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">
+        <h4>Chat with Me</h4>
+        <button id="chatbot-toggle"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chatbot-body">
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your message here...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+</div>
+
+<!-- Chatbot Icon/Button -->
+<button id="chatbot-open"><i class="fas fa-comments"></i></button>
+
+ 
 </body>
 </html>

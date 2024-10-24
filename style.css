@@ -56,6 +56,7 @@ header {
 
 
 /* About Section */
+
 #about h2 {
     text-align: center;
     color: #fff;
@@ -64,6 +65,7 @@ header {
 }
 
 .about-section {
+    background: rgba(0, 0, 0, 0.7) url('images/greener.jpg') center/cover; 
     margin-bottom: 30px;
 }
 
@@ -76,7 +78,7 @@ header {
 .about-section p {
     font-size: 1.2rem;
     /* background: rgba(0, 0, 0, 0.7) url('images/about-green-icon.png ') center/cover; */
-    background-color: rgba(255, 255, 255, 0.2);  
+    /* background-color: rgba(255, 255, 255, 0.2);    */
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -301,3 +303,103 @@ footer {
         font-size: 16px;
     }
 }
+/* Chatbot Styling */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #0a4b3d;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chatbot-header {
+    background-color: #055344;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-body {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-color: #fff;
+}
+
+.chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.chatbot-input {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.chatbot-input button {
+    padding: 8px 16px;
+    background-color: #0a4b3d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#chatbot-open {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.chatbot-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #0a4b3d;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #ddd;
+    color: black;
+    align-self: flex-start;
+}
+ 
+
