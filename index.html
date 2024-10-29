@@ -185,26 +185,24 @@
     </footer>
 
 
-<!-- Chatbot Section -->
-<div class="chatbot-container" id="chatbot-container">
-    <div class="chatbot-header">
-        <h4>Chat with Me</h4>
-        <button id="chatbot-toggle"><i class="fas fa-times"></i></button>
+    <div class="chatbot-icon" onmouseover="changeIcon(true)" onmouseout="changeIcon(false)" onclick="toggleChatbot()">
+        <i class="fas fa-comments" id="chatbotIcon"></i>
     </div>
-    <div class="chatbot-body">
-        <div id="chatbot-messages" class="chatbot-messages">
-            <!-- Chat messages will appear here -->
+    <div class="edit-text" id="hoverText" style="display: none;">Click to chat!</div>
+    <div class="chatbot-window" id="chatbotWindow">
+        <div class="chatbot-header">
+            <h4>Chat with Hlanganani's Assistant</h4>
+            <button class="close-btn" onclick="toggleChatbot()">&times;</button>
+        </div>
+   
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="message bot-message">Hello! How can I help you today?</div>
         </div>
         <div class="chatbot-input">
-            <input type="text" id="user-input" placeholder="Type your message here...">
-            <button id="send-btn">Send</button>
+            <input type="text" id="userInput" placeholder="Type a message..." onkeypress="sendMessage(event)">
+            <button onclick="sendMessage(event)">Send</button>
         </div>
     </div>
-</div>
-
-<!-- Chatbot Icon/Button -->
-<button id="chatbot-open"><i class="fas fa-comments"></i></button>
-
  
 </body>
 </html>
