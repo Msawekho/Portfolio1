@@ -42,8 +42,15 @@ function changeIcon(isHover) {
 
 function toggleChatbot() {
     const chatbotWindow = document.getElementById("chatbotWindow");
-    chatbotWindow.style.display = (chatbotWindow.style.display === "none" || chatbotWindow.style.display === "") ? "flex" : "none";
+    if (chatbotWindow.classList.contains("open")) {
+        chatbotWindow.classList.remove("open");
+        setTimeout(() => chatbotWindow.style.display = "none", 400); // Delay to match fade-out effect
+    } else {
+        chatbotWindow.style.display = "flex";
+        setTimeout(() => chatbotWindow.classList.add("open"), 10); // Small delay for smooth start
+    }
 }
+
 
 function sendMessage(event) {
     if (event.type === 'keypress' && event.key !== 'Enter') return;
