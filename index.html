@@ -50,8 +50,9 @@
             </div>
             
             <!-- Second section: Software Development Journey -->
-            <div class="about-section">
-                <img src="images/Languages.webp" alt="Software Development" class="about-image">
+            <div class="about-container">   
+                <div class="about-section">
+                
                 <div class="about-text">
                     <h3>Software Development Journey & Skills</h3>
                     <p>Following my CNC programming role, I pursued a 3-year diploma in Software Development. This allowed me to dive 
@@ -65,6 +66,7 @@
                         life. Whether designing intuitive user interfaces or optimizing backend performance, I am always eager to learn 
                         new technologies and push the boundaries of what can be achieved through software.</p>
                 </div>
+                <img src="images/Languages.webp" alt="Software Development" class="about-image">
             </div>
         </div>
     </section>
@@ -92,7 +94,7 @@
             </div>
     
             <div class="project project-right">
-                <img src="images/Project2.jfif" alt="Online Church" class="project-image">
+                
                 <div class="project-content">
                     <h3>Online Church</h3>
                     <p>A web-based platform designed for a church community, offering features like live streaming, event management, and donation options.</p>
@@ -109,6 +111,7 @@
                     </div>
                     <a href="https://github.com/Tsametsi/Church-Online-App" target="_blank">View GitHub Repository</a>
                 </div>
+                <img src="images/Project2.jfif" alt="Online Church" class="project-image">
             </div>
 
             <div class="project project-left">
@@ -133,7 +136,7 @@
             </div>
 
             <div class="project project-right">
-                <img src="images/project4.jfif" alt="Online Church" class="project-image">
+                
                 <div class="project-content">
                     <h3>Donation to Disaster</h3>             
                     <p>A platform that enables users to make donations to disaster relief efforts, with features for tracking 
@@ -151,6 +154,7 @@
                     </div>
                     <a href="https://github.com/Msawekho/DisasterWeb2" target="_blank">View GitHub Repository</a>
                 </div>
+                <img src="images/project4.jfif" alt="Online Church" class="project-image">
             </div>
     
             <!-- Repeat structure for remaining projects, alternating project-left and project-right -->
@@ -204,24 +208,24 @@
     </footer>
 
 
-    <div class="chatbot-icon" onmouseover="changeIcon(true)" onmouseout="changeIcon(false)" onclick="toggleChatbot()">
-        <i class="fas fa-comments" id="chatbotIcon"></i>
-    </div>
-    <div class="edit-text" id="hoverText" style="display: none;">Click to chat!</div>
-    <div class="chatbot-window" id="chatbotWindow">
-        <div class="chatbot-header">
-            <h4>Chat with Hlanganani's Assistant</h4>
-            <button class="close-btn" onclick="toggleChatbot()">&times;</button>
+        <div class="chatbot-icon" onmouseover="changeIcon(true)" onmouseout="changeIcon(false)" onclick="toggleChatbot()">
+            <i class="fas fa-comments" id="chatbotIcon"></i>
         </div>
-   
-        <div class="chatbot-messages" id="chatMessages">
-            <div class="message bot-message">Hello! How can I help you today?</div>
+        <div class="edit-text" id="hoverText" style="display: none;">Click to chat!</div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h4>Chat with Hlanganani's Assistant</h4>
+                <button class="close-btn" onclick="toggleChatbot()">&times;</button>
+            </div>
+    
+            <div class="chatbot-messages" id="chatMessages">
+                <div class="message bot-message">Hello! How can I help you today?</div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="userInput" placeholder="Type a message..." onkeypress="sendMessage(event)">
+                <button onclick="sendMessage(event)">Send</button>
+            </div>
         </div>
-        <div class="chatbot-input">
-            <input type="text" id="userInput" placeholder="Type a message..." onkeypress="sendMessage(event)">
-            <button onclick="sendMessage(event)">Send</button>
-        </div>
-    </div>
- 
+    
 </body>
 </html>
