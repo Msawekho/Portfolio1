@@ -1,3 +1,4 @@
+// Form validation
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -26,8 +27,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     document.getElementById('successMessage').style.display = 'block';
     this.reset();
 });
-let editTextElement;
 
+// Icon hover function
 function changeIcon(isHover) {
     const icon = document.getElementById('chatbotIcon');
     const hoverText = document.getElementById('hoverText');
@@ -40,6 +41,7 @@ function changeIcon(isHover) {
     }
 }
 
+// Toggle chatbot window
 function toggleChatbot() {
     const chatbotWindow = document.getElementById("chatbotWindow");
     if (chatbotWindow.classList.contains("open")) {
@@ -51,7 +53,7 @@ function toggleChatbot() {
     }
 }
 
-
+// Send message function
 function sendMessage(event) {
     if (event.type === 'keypress' && event.key !== 'Enter') return;
 
@@ -71,7 +73,7 @@ function sendMessage(event) {
         botMessage.textContent = generateResponse(userInput.value); // Generate dynamic response
         chatMessages.appendChild(botMessage);
 
-        chatMessages.scrollTop = chatMessages.scrollHeight;
+        chatMessages.scrollIntoView({ behavior: 'smooth', block: 'end' });
         userInput.value = '';
     }
 }
@@ -83,17 +85,17 @@ function generateResponse(message) {
     if (message.includes("skills") || message.includes("technologies") || message.includes("experience")) {
         return "I have experience in JavaScript, Java, Kotlin, PHP, and C#, with expertise in both front-end and back-end development!";
     }
-     else if (message.includes("about") || message.includes("yourself") || message.includes("Who are you")) {
+    else if (message.includes("about") || message.includes("yourself") || message.includes("who")) {
         return "Hello! My name is Hlanganani Hlongwane, and my journey into the world of technology began in high school, where I developed a strong interest in both technical and mechanical fields. After high school, I gained 1 year of hands-on experience as a CNC programmer, operator, and setter. This role sharpened my precision, problem-solving, and technical skills in a manufacturing environment.";
     }
-     else if (message.includes("How are you") || message.includes("Hello")) {
-        return "Hello! How are you?";
-    }
+    else if (message.includes("school") || message.includes("education") || message.includes("carrie")) {
+        return "I finished Matrci, did CNC Programming then after, I did a 3-year diploma in Software Development at IIE Rosebank college.";
+    } 
     else if (message.includes("projects") || message.includes("portfolio")) {
         return "You can check out my projects on this portfolio, including my work on an online church platform and a donation site.";
     } 
     else if (message.includes("contact") || message.includes("email")) {
-        return "Feel free to reach out via email at hlanganani.hlongwane@capaciti.org.za or connect on LinkedIn!";
+        return "Feel free to reach out via email at hlanganani.hlongwane@ capaciti.org.za or connect on LinkedIn!";
     } 
     else {
         return "Hello! How can I assist you today?";
