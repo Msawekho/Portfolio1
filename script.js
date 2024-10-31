@@ -23,6 +23,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert('Please enter a valid email address');
         return;
     }
+    
 
     document.getElementById('successMessage').style.display = 'block';
     this.reset();
@@ -77,6 +78,19 @@ function sendMessage(event) {
         userInput.value = '';
     }
 }
+function toggleReadMore() {
+    const moreText = document.querySelector('.more-text');
+    const btnText = document.getElementById('read-more-btn');
+    
+    if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        btnText.innerText = "Read Less";
+    } else {
+        moreText.style.display = "none";
+        btnText.innerText = "Read More";
+    }
+}
+
 
 // Analyze the user's message and return an appropriate response
 function generateResponse(message) {
