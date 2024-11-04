@@ -96,7 +96,7 @@ function toggleReadMore() {
 function generateResponse(message) {
     message = message.toLowerCase();
 
-    if (message.includes("skills") || message.includes("technologies") || message.includes("experience")) {
+    if (message.includes("skills") || message.includes("technologies") || message.includes("experience")|| message.includes("work")) {
         return "I have experience in JavaScript, Java, Kotlin, PHP, and C#, with expertise in both front-end and back-end development!";
     }
     else if (message.includes("about") || message.includes("yourself") || message.includes("who")) {
