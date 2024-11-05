@@ -16,9 +16,10 @@ header {
     align-items: center;
     padding: 0.1px 0.1px;
     background: rgba(0, 0, 0, 0.7) url('images/images3.jpeg') center/cover;
-    position:sticky;
+    position: sticky;
     top: 0;
     z-index: 1000;
+    transform: translateY(-30px); 
 }
 
 /* Intro Section */
@@ -173,9 +174,7 @@ header {
     padding: 20px;
     border-radius: 8px;
 }
-.more-text {
-    display: none; /* Hide additional paragraphs */
-}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -431,7 +430,6 @@ nav ul li a:hover {
         margin-left: 0;
     }
 }
-
 
 /* Footer */
 footer {

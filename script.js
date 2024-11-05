@@ -97,15 +97,15 @@ function generateResponse(message) {
     message = message.toLowerCase();
 
     if (message.includes("skills") || message.includes("technologies") || message.includes("experience")|| message.includes("work")) {
-        return "I have experience in JavaScript, Java, Kotlin, PHP, and C#, with expertise in both front-end and back-end development!";
+        return "Hlanganani have experience in JavaScript, Java, Kotlin, PHP, and C#, with expertise in both front-end and back-end development!";
     }
     else if (message.includes("about") || message.includes("yourself") || message.includes("who")) {
         return "Hello! My name is Hlanganani Hlongwane, and my journey into the world of technology began in high school, where I developed a strong interest in both technical and mechanical fields. After high school, I gained 1 year of hands-on experience as a CNC programmer, operator, and setter. This role sharpened my precision, problem-solving, and technical skills in a manufacturing environment.";
     }
     else if (message.includes("school") || message.includes("education") || message.includes("carrie")) {
-        return "I finished Matrci, did CNC Programming then after, I did a 3-year diploma in Software Development at IIE Rosebank college.";
+        return "Hlanganani finished Matrci, did CNC Programming then after, Hlanganani did a 3-year diploma in Software Development at IIE Rosebank college.";
     } 
-    else if (message.includes("projects") || message.includes("portfolio")) {
+    else if (message.includes("projects") || (message.includes("project") || message.includes("portfolio")) {
         return "You can check out my projects on this portfolio, including my work on an online church platform and a donation site.";
     } 
     else if (message.includes("contact") || message.includes("email")) {
@@ -115,3 +115,4 @@ function generateResponse(message) {
         return "Hello! How can I assist you today?";
     }
 }
+    
