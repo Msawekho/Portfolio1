@@ -105,7 +105,7 @@ function generateResponse(message) {
     else if (message.includes("school") || message.includes("education") || message.includes("carrie")) {
         return "Hlanganani finished Matrci, did CNC Programming then after, Hlanganani did a 3-year diploma in Software Development at IIE Rosebank college.";
     } 
-    else if (message.includes("projects") || (message.includes("project") || message.includes("portfolio")) {
+    else if (message.includes("projects") || message.includes("project") || message.includes("portfolio")) {
         return "You can check out my projects on this portfolio, including my work on an online church platform and a donation site.";
     } 
     else if (message.includes("contact") || message.includes("email")) {
